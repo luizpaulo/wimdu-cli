@@ -30,6 +30,7 @@ class PropertyReader
 
       property
     else
+      Property.all.each {|p| puts ">>>>>>>>> #{p.id}" }
       begin
         Property.find(args.first)
       rescue ActiveRecord::RecordNotFound
