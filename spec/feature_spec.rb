@@ -40,7 +40,6 @@ describe "Wimdu CLI" do
       type "My address" 
       expect(process.output).to include("A phone must be in format +99 999 9999")
       type "+99 999 9999"
-      expect(process.output).to include("Max guests must be a number, greater than 1")
       expect(process.output).to include("Great job! Listing property")
     end
   end
